@@ -1,0 +1,47 @@
+
+///Realizar una función que inserte un carácter en un arreglo ordenado alfabéticamente, conservando el orden.
+
+ void ingresaLetra (char *letra);
+
+ int main()
+ {
+     printf("CREANDO ARRAY EN MAIN\n");
+     printf("---------------------\n");
+     int cant = 8;
+     int validos = 7;
+     char letra;
+     char array [] = {'a','e','i','l','o','r','w'};
+     for (int e=0; e<validos ;e++)
+     {
+         printf ("%c \n", array[e]);
+     }
+     ingresaLetra (&letra);
+     printf ("el valor ingresado es... %c", letra);
+
+     ordenaLetra (&letra, array);
+
+
+     return 0;
+ }
+
+ void ingresaLetra (char *letra)
+ {
+
+ printf ("ingresa el valor a buscar \n");
+ fflush (stdin);
+ scanf ("%c", letra);
+
+ }
+
+ void ordenaLetra (char *letra, char array)
+ {
+ char aux;
+ for (int e=0; e<validos ;e++)
+     {
+         if (array < letra)
+         {
+            aux = array [e];
+             
+         }
+     }
+ }
