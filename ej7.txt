@@ -1,4 +1,5 @@
 
+
 ///Realizar una función que inserte un carácter en un arreglo ordenado alfabéticamente, conservando el orden.
 
  void ingresaLetra (char *letra);
@@ -18,7 +19,7 @@
      ingresaLetra (&letra);
      printf ("el valor ingresado es... %c", letra);
 
-     ordenaLetra (&letra, array);
+     ordenaLetra (&letra, array, validos);
 
 
      return 0;
@@ -33,15 +34,19 @@
 
  }
 
- void ordenaLetra (char *letra, char array)
+void ordenaLetra (char *letra, char array, int validos)
  {
  char aux;
- for (int e=0; e<validos ;e++)
+ char aux2;
+ int i = 0
+ while (array[i] < letra && i < validos)
      {
-         if (array < letra)
-         {
-            aux = array [e];
-             
-         }
+      i++
      }
- }
+     aux= array [i-1];
+     array [i-1] = letra;
+     while (i<validos)
+     {
+         aux2= array[i];
+         array[]
+     }
